@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/Logo.png" type="image/x-icon" />
+    <title>ĐắkLắk - TIME</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/Logo.png" alt="" class="logo-image" />
+
+          <a href="./index.html">ĐăkLắk - TIME</a>
+        </div>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href=".silidecontain" class="menu-link">Home</a>
+            <a href=".WhoWeAre" class="menu-link">Destination</a>
+            <a href="#3" class="menu-link">Blog</a>
+            <a href="#4" class="menu-link">About</a>
+            <a href="#5" class="menu-link">Contact</a>
+            <a href="#5" class="menu-link"
+              ><audio
+                id="myAudio"
+                src="./img/y2mate.com - gqtis  POOR Phonk_480p.mp4"
+                controls
+                hidden
+                autoplay
+                loop
+              ></audio></a
+            ><button id="controls"></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="slidecontain">
+        <div id="caption">
+          <h2 id="caption1">Bí ẩn của Rừng Rậm Đắk Lắk</h2>
+          <p id="caption2">
+            Khám phá vẻ đẹp huyền bí của rừng rậm Đắk Lắk, nơi ẩn chứa những
+            loài động vật quý hiếm và những thảo nguyên xanh mướt.
+          </p>
+          <button id="xemThem">Learn More</button>
+        </div>
+        <img src="./img/slide1.jpg" alt="" id="slide" />
+        <button id="nextLeft" onclick="Left()">
+          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button
+        ><button id="nextRight" onclick="Right()">
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+        <div id="countIMG">
+          <div id="count1"></div>
+          <div id="count2"></div>
+          <div id="count3"></div>
+        </div>
+        <img src="./img/clouds.png" alt="" id="clouds" />
+      </div>
+      <!-- -------------------------------- -->
+      <div class="WhoWeAre">
+        <h3>Who We Are ?</h3>
+        <div class="wwa1">
+          <img src="./img/bandovietnam.png" alt="" />
+          <div class="HaNoi" href="">
+            <div class="vongHN1">
+              <div class="vongHN2"></div>
+            </div>
+            <div class="motaHN">
+              <p>Hà Nội (Thủ Đô)</p>
+            </div>
+          </div>
+          <div class="dakLak" href="">
+            <div class="vongDL1">
+              <div class="vongDL2"></div>
+            </div>
+            <div class="motaDL">
+              <p>ĐăkLắk</p>
+            </div>
+          </div>
+        </div>
+        <div class="wwa2">
+          <div>
+            <h3>Company ĐắkLắk - Time</h3>
+            <p>
+              Chúng tôi là Công ty Du lịch Đắk Lắk, nơi mà chúng tôi không chỉ
+              cung cấp chuyến du lịch, mà còn mang đến trải nghiệm sâu sắc về
+              văn hóa và đẹp tự nhiên của miền đất đỏ Đắk Lắk. Với sứ mệnh đưa
+              du khách đến gần với thiên nhiên, chúng tôi tự hào là người dẫn
+              dắt họ khám phá những rừng già màu xanh mướt, những thác nước hùng
+              vĩ và những ngôi làng dân dã truyền thống. <br />
+              Tại Công ty Du lịch Đắk Lắk, chúng tôi chú trọng vào trải nghiệm
+              cá nhân hóa. Chúng tôi thiết kế các hành trình du lịch độc đáo, từ
+              viếng thăm các khu dân cư dân dã đến tham quan các khu vườn cà phê
+              và trang trại hồ chua, để du khách có thể tận hưởng hương vị thơm
+              ngon của cà phê Robusta nổi tiếng của chúng tôi. <br />
+              Đồng thời, chúng tôi còn cung cấp các tour phiêu lưu dành cho
+              những người yêu thích thể thao mạo hiểm, từ leo núi đến đua thuyền
+              kayak trên các con sông sôi động. Bên cạnh đó, các tour tham quan
+              văn hóa với việc tham gia các lễ hội truyền thống và khám phá nền
+              văn hóa độc đáo của các dân tộc thiểu số tại Đắk Lắk là những trải
+              nghiệm không thể quên. <br />
+              Hãy đồng hành cùng chúng tôi để khám phá Đắk Lắk - nơi gặp gỡ với
+              thiên nhiên hùng vĩ và với lòng hiếu khách mến khách của những
+              người dân nơi đây. Chúng tôi không chỉ là người tổ chức chuyến đi,
+              mà còn là người bạn đồng hành đáng tin cậy trên hành trình của
+              bạn.
+            </p>
+            <img src="./img/chukycongty.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="Destination">
+        <h3>Destination <i class="fa-solid fa-map-location-dot"></i></h3>
+        <div class="btnDestiantion">
+          <button id="leftDestination">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i></button
+          ><button id="rightDestination">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="holdDestination">
+          <div id="newDestination">
+            <div class="news1">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination1.jpeg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Buôn Đôn</h3>
+                <p>
+                  Khám phá Buôn Đôn - bí mật đất đai Ê Đê, nơi hòa quyện với
+                  thiên nhiên, văn hóa và truyền thống êm đềm.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao10"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao20"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao30"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao40"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao50"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+            <div class="news2">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination2.jpg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Vườn quốc gia Yok Đôn</h3>
+                <p>
+                  Vườn Quốc gia Yok Đôn - Hòa mình trong thiên nhiên bí ẩn, trải
+                  nghiệm cuộc phiêu lưu đầy kỳ thú tại rừng già và thác nước
+                  hùng vĩ.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao11"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao21"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao31"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao41"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao51"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+            <div class="news3">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination3.jpg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Bảo tàng Thế giới Cà phê</h3>
+                <p>
+                  Bảo tàng Thế giới Cà phê - Hành trình khám phá vị ngon và lịch
+                  sử của hạt cà phê, nơi kết nối đam mê và kiến thức về đồ uống
+                  ngon nhất thế giới.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao12"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao22"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao32"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao42"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao52"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+            <div class="news1">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination4.jpeg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Vườn thực vật Troh Bư</h3>
+                <p>
+                  Vườn Thực vật Troh Bư - Hòa mình vào thiên nhiên hoang dã,
+                  khám phá đa dạng sinh quyển với hàng ngàn loài thực vật độc
+                  đáo tại khu vườn tuyệt vời này.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao13"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao23"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao33"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao43"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao53"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+            <div class="news1">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination5.jpeg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Thác Dray Sáp - Dray Nur</h3>
+                <p>
+                  Thác Dray Sáp & Dray Nur - Những dòng thác mạnh mẽ tại địa
+                  điểm độc đáo này hứa hẹn mang đến trải nghiệm hấp dẫn cho du
+                  khách.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao14"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao24"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao34"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao44"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao54"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+            <div class="news1">
+              <div class="divAnh" style="overflow: hidden">
+                <img src="./img/destination6.jpg" alt="" />
+              </div>
+              <div class="moTa">
+                <h3>Vườn quốc gia Chư Yang Sin</h3>
+                <p>
+                  Vườn quốc gia Chư Yang Sin - Hòa mình vào hành trình khám phá
+                  thiên nhiên hoang sơ và đa dạng tại ngôi nhà tự nhiên của loài
+                  động, thực vật độc đáo.
+                </p>
+                <br />
+                <p>Appreciate</p>
+                <div id="danhgia">
+                  <i class="fa fa-star" aria-hidden="true" id="sao15"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao25"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao35"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao45"></i
+                  ><i class="fa fa-star" aria-hidden="true" id="sao55"></i>
+                </div>
+                <button id="btnDestination">Let's Go</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------- -->
+
+      <div class="travelerChoice">
+        <h3>Traveler Choice</h3>
+        <div class="tCdiv"></div>
+        <div>
+          <div class="tC1"><img src="./img/travler1.jpg" alt="" /></div>
+          <div class="tC2"><img src="./img/travler2.jpg" alt="" /></div>
+          <div class="tC3"><img src="./img/travler3.jpg" alt="" /></div>
+          <div class="tC4"><img src="./img/travler4.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <div class="wewillcomback">
+        <h3 id="TextComback">We Will Comback !!!</h3>
+        <div class="hopTime">
+          <div class="ngay">ngày</div>
+          <h2>:</h2>
+          <div class="gio">giờ</div>
+          <h2>:</h2>
+          <div class="phut">phút</div>
+          <h2>:</h2>
+          <div class="giay">giây</div>
+        </div>
+      </div>
+      <div class="contact">
+        <div id="contact1">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="inputName" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="inputEmail" />
+          </div>
+          <div>
+            <label for="phone">PhoneNumber:</label>
+            <input type="text" name="phone" id="inputPhone" />
+          </div>
+          <div>
+            <button id="buttonContact1">Send for us</button>
+            <button id="buttonContact2">Clear All</button>
+          </div>
+        </div>
+        <div id="contact2">
+          <h3 id="contactText">
+            Contact <br />
+            Us
+          </h3>
+        </div>
+      </div>
+      <footer>
+        <p>created by Quách Hoàng Bo</p>
+      </footer>
+    </main>
+    <script src="./code.js"></script>
+  </body>
+</html>
